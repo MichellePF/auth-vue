@@ -57,6 +57,9 @@ export default new Vuex.Store({
       .then(()=> {
         router.push('/acceso')
       })
+    },
+    detectarUsuario({commit}, usuario){
+      commit('setUsuario', usuario)
     }
   },
   modules: {
